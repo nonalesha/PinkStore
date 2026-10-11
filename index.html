@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f04483"><meta name="description" content="PinkStore — katalog aplikasi premium">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>PinkStore Premium</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="brand"><div class="logo">P</div><div><b>PinkStore</b><small>PREMIUM STORE</small></div></div><button id="installBtn" class="install hidden">Install App</button></header>
+<section class="hero"><span class="eyebrow">YOUR PREMIUM PLACE ✦</span><h1>Upgrade your<br><em>digital life.</em></h1><p>Aplikasi premium favoritmu, dalam satu tempat.</p><div class="searchbox">⌕ <input id="search" placeholder="Cari aplikasi premium..." aria-label="Cari aplikasi"></div><div class="hero-bubble">✦</div></section>
+<div class="toolbar"><div><h2>Katalog Premium</h2><p id="count">36 aplikasi</p></div><select id="category" aria-label="Filter kategori"><option value="Semua">Semua kategori</option><option>Editing</option><option>Streaming</option><option>AI & Produktivitas</option><option>Foto & Kamera</option><option>Hiburan</option><option>Lainnya</option></select></div>
+<main id="catalog" class="catalog"></main>
+<section class="notice"><b>♡ Pesan dengan mudah</b><p>Pilih aplikasi dan paketnya, lalu lanjutkan pemesanan melalui WhatsApp admin <b>085971643586</b>.</p></section>
+<footer>© 2026 PinkStore · Premium digital catalog</footer>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="sheet"><button class="close" id="closeModal" aria-label="Tutup">×</button><div id="modalIcon" class="big-icon"></div><h2 id="modalName"></h2><p id="modalDesc"></p><label for="plan">Pilih paket</label><select id="plan"></select><label for="buyer">Nama pembeli (opsional)</label><input id="buyer" placeholder="Nama kamu"><button id="orderBtn" class="primary">Pesan via WhatsApp ↗</button><small class="hint">Harga contoh bisa disesuaikan di file <b>products.js</b>.</small></div></div>
+<script src="products.js"></script><script src="app.js"></script>
+</body></html>
